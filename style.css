@@ -23,7 +23,7 @@ header, main{
     color: #E95A08;
 }
 .black2{
-    rgba(0, 0, 0, 0.5)
+    color: rgba(0, 0, 0, 0.5)
 }
 /* common css end */
 .header{
@@ -62,54 +62,103 @@ header, main{
 .header-banner{
     width: 100%;
     display: flex;
-    align-items: flex-end;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 100px;
 }
 .banner-text{
     width: 50%;
     margin-bottom: 0px;
-    grid-area: banner-text;
 }
 .banner-intro{
-    font-size: 65px;
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom: 10px;
 }
 .banner-paragraph{
-    font-size: 22px;
+    font-size: 1.3rem;
     margin-top: 5px;
     margin-bottom: 0px;
 }
 .banner-img{
     width: 50%;
-    grid-area: banner-img;
+    height: auto;
+}
+.banner-img img{
+    width: 100%;
+    height: auto;
 }
 /* header css End */
 /* header responsive css start */
 @media only screen and (max-width: 768px){
+    .logo img{
+        max-width: 80px;
+        height: auto;
+    }
     .main-nav ul li:nth-child(-n+3){
         display: none;
     }
     .header-banner{
-        flex-direction: column;
-        display: grid;
-        grid-template-areas: 
-        "banner-img"
-        "banner-text"
-        ;
+        margin-top: 50px;
+        flex-direction: column-reverse;
     }
     .banner-img{
         width: 100%;
     }
     .banner-img img{
         width: 100%;
-        display: block;
         height: auto;
+    }
+    .banner-intro{
+        font-size: 1.7rem;
+        font-weight: 700;
     }
     .banner-text{
         width: calc(100% - 30px);
-        font-size: 15px;
+        font-size: 1rem;
         padding: 15px;
     }
 }
+/* @media (min-width: 769px) and (max-width: 992px){
+    .banner-intro{
+        font-size: 40px;
+        font-weight: 700;
+    }
+} */
 /* header responsive css end */
+
+/* plants section css start */
+.plants-section{
+    text-align: center;
+}
+.plants-title{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.plants-description{
+    padding: 0px 120px;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.flower-name{
+    font-size: 20px;
+    font-weight: 500;
+}
+.flower-price{
+    font-size: 20px;
+    font-weight: 700;
+}
+.add-to-cart{
+    background-color: #E95A08;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    padding: 20px 80px;
+}
+/* plants section css end */
