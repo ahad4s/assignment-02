@@ -1,7 +1,7 @@
 body{
     background-color: #f4f6fc;
 }
-header, main{
+header, main, footer{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -219,6 +219,41 @@ header, main{
 }
 /* join section css end */
 
+/* footer css start */
+.footer{
+    width: 100%;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding-top: 50px;
+}
+.site-info p{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+}
+.footer-menu1 ul, .footer-menu2 ul{
+    list-style: none;
+}
+.footer-menu1 li, .footer-menu2 li{
+    padding-bottom: 20px;
+}
+.footer-menu1 li a, .footer-menu2 li a{
+    color: #252432;
+    text-decoration: none;
+}
+.footer-social{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+.footer-social img{
+    width: 32px;
+    height: 32px;
+}
+/* footer css end */
+
 /* responsive css start */
 @media only screen and (max-width: 768px){
     /* header responsive css start */
@@ -287,6 +322,16 @@ header, main{
     }
     /* flower lover section responsive css end*/
 
-   
+    /* footer responsive css start */
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-container ul{
+        padding-left: 0px;
+    }
+   .site-info, .footer-menu1, .footer-menu2, .footer-social{
+    padding-left: 20px;
+   }
+   /* footer responsive css end */
 }
 /* responsive css end */
