@@ -1,10 +1,11 @@
+body{
+    background-color: #f4f6fc;
+}
 header, main{
     max-width: 1140px;
     margin: 0 auto;
 }
-body{
-    background-color: #f4f6fc;
-}
+
 /* google fonts */
 .noto-serif{
     font-family: "Noto Serif", serif;
@@ -141,6 +142,7 @@ body{
     display: flex;
     width: 100%;
     align-items: center;
+    margin-bottom: 100px;
 }
 .flower-img-section{
     width: 50%;
@@ -174,6 +176,48 @@ body{
 }
 /* flower lover section css End */
 
+/* join section css start */
+.join-section{
+    background-image: url(assets02/news-letter-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.join-section-container {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  max-width: 700px;
+  width: 90%;
+}
+.join-section-container h3 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.subscription-form {
+  display: flex;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.subscription-form input[type="email"] {
+  flex: 2;
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+}
+.subscription-form button {
+  flex: 1;
+  padding: 15px;
+  font-size: 16px;
+  background-color: #E95A08;
+  color: white;
+  border: none;
+}
+/* join section css end */
 
 /* responsive css start */
 @media only screen and (max-width: 768px){
@@ -242,5 +286,7 @@ body{
         padding: 0px;
     }
     /* flower lover section responsive css end*/
+
+   
 }
 /* responsive css end */
