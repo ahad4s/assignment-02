@@ -2,6 +2,9 @@ header, main{
     max-width: 1140px;
     margin: 0 auto;
 }
+body{
+    background-color: #f4f6fc;
+}
 /* google fonts */
 .noto-serif{
     font-family: "Noto Serif", serif;
@@ -89,8 +92,92 @@ header, main{
     height: auto;
 }
 /* header css End */
-/* header responsive css start */
+
+/* plants section css start */
+.plants-section{
+    text-align: center;
+    margin-bottom: 150px;
+}
+.plants-title{
+    width: 100%;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.plants-description{
+    padding: 0px 120px;
+}
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.plants-cards img{
+    width: 100%;
+    height: auto;
+}
+.plants-cards h3{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 10px 0 5px;
+}
+.plants-cards p{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0 0 15px;
+}
+.plants-cards button{
+    background-color: #E95A08;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 15px;
+    width: 100%;
+    border: none;
+}
+/* plants section css end */
+
+/* flower lover section css start */
+.flower-lover{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+.flower-img-section{
+    width: 50%;
+}
+.flower-img-section img:first-child{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.flower-img-section img:last-child{
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -150px;
+}
+.flower-text{
+    width: 50%;
+    padding: 40px 0px 40px 60px;
+}
+.flower-text h3{
+    color: #000000;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.flower-text li{
+    font-size: 22px;
+    padding-top: 20px;
+}
+/* flower lover section css End */
+
+
+/* responsive css start */
 @media only screen and (max-width: 768px){
+    /* header responsive css start */
     .logo img{
         max-width: 80px;
         height: auto;
@@ -118,84 +205,42 @@ header, main{
         font-size: 1rem;
         padding: 15px;
     }
-}
-/* @media (min-width: 769px) and (max-width: 992px){
-    .banner-intro{
-        font-size: 40px;
-        font-weight: 700;
+    /* header responsive css end */
+
+    /* plants section responsive css start */
+    .plants-section{
+        padding-left: 10px;
+        padding-right: 10px;
     }
-} */
-/* header responsive css end */
+    .plants-description{
+        padding: 10px;
+    }
+    .cards-container{
+    grid-template-columns: repeat(2, 1fr);
+    }
 
-/* plants section css start */
-.plants-section{
-    text-align: center;
-    margin-bottom: 150px;
-}
-.plants-title{
-    width: 100%;
-    font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 10px;
-}
-.plants-description{
-    padding: 0px 120px;
-}
-.cards-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-.flower-name{
-    font-size: 20px;
-    font-weight: 500;
-}
-.flower-price{
-    font-size: 20px;
-    font-weight: 700;
-}
-.add-to-cart{
-    background-color: #E95A08;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    border: none;
-    padding: 20px 80px;
-}
-/* plants section css end */
+    /* plants section responsive css end */
 
-/* flower lover section css start */
-.flower-lover{
-    display: flex;
+    /* flower lover section responsive css start */
+    .flower-lover{
+        flex-direction: column;
+        width: calc(100% - 10px);
+        padding: 10px;
+    }
+    .flower-img-section{
+        width: 100%;
+    }
+    .flower-img-section img:first-child{
+        position: static;
+    }
+    .flower-img-section img:last-child{
+        position: static;
+        display: none;
+    }
+    .flower-text{
+        width: 100%;
+        padding: 0px;
+    }
+    /* flower lover section responsive css end*/
 }
-.flower-img-section{
-    width: 50%;
-}
-.flower-img1{
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-.trusted-badge{
-    width: 250px;
-    height: 250px;
-    position: absolute;
-    margin-top: -120px;
-    margin-left: -150px;
-}
-.flower-text{
-    width: 50%;
-    padding: 40px 0px 40px 60px;
-}
-.flower-text h3{
-    color: #000000;
-    font-size: 50px;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-.flower-text li{
-    font-size: 22px;
-    padding-top: 20px;
-}
-/* flower lover section css End */
+/* responsive css end */
